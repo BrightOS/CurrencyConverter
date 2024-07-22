@@ -63,9 +63,6 @@
 -if interface * { @retrofit2.http.* public *** *(...); }
 -keep,allowoptimization,allowshrinking,allowobfuscation class <3>
 
-# With R8 full mode generic signatures are stripped for classes that are not kept.
--keep,allowobfuscation,allowshrinking class retrofit2.Response
-
 # Gson uses generic type information stored in a class file when working with
 # fields. Proguard removes such information by default, keep it.
 -keepattributes Signature
@@ -74,8 +71,6 @@
 # optimizations will remove the generic signature such as class
 # merging and argument removal. See:
 # https://r8.googlesource.com/r8/+/refs/heads/main/compatibility-faq.md#troubleshooting-gson-gson
--keep class com.google.gson.reflect.TypeToken { *; }
--keep class * extends com.google.gson.reflect.TypeToken
 
 # Optional. For using GSON @Expose annotation
 -keepattributes AnnotationDefault,RuntimeVisibleAnnotations
