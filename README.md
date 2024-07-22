@@ -2,10 +2,7 @@
 ## Android-приложение для быстрой и простой конвертации валют
 
 ### Скриншоты:
-<img src="https://i.imgur.com/zjiSmPD.png" alt="Экран ввода данных (тёмная тема)" style="width:150px;"/>
-<img src="https://i.imgur.com/CKrfyiX.png" alt="Экран отображения результата (тёмная тема)" style="width:150px;"/>
-<img src="https://i.imgur.com/0lehBqc.png" alt="Главный экран (светлая тема)" style="width:150px;"/>
-<img src="https://i.imgur.com/MLTj06I.png" alt="Экран отображения результата (светлая тема)" style="width:150px;"/>
+<img src="https://i.imgur.com/zjiSmPD.png" alt="Экран ввода данных (тёмная тема)" style="width:150px;"/><img src="https://i.imgur.com/CKrfyiX.png" alt="Экран отображения результата (тёмная тема)" style="width:150px;"/><img src="https://i.imgur.com/0lehBqc.png" alt="Главный экран (светлая тема)" style="width:150px;"/><img src="https://i.imgur.com/MLTj06I.png" alt="Экран отображения результата (светлая тема)" style="width:150px;"/>
 
 ### Реализованная функциональность:
 - Интеграция с [exchangerate-api.com](https://exchangerate-api.com) с использованием Retrofit
