@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        app:shimmer_highlight_alpha="1"
+        app:shimmer_highlight_color="?colorSurface"
+        app:shimmer_base_color="?colorSurfaceContainerHighest"
+        app:shimmer_colored="true"
+        app:shimmer_base_alpha="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="89dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorSurfaceContainerHighest" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorSurfaceContainerHighest"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_semibold"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:backgroundTint="?colorSurfaceContainerHighest" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/selectorFragment">
+
+    <fragment
+        android:id="@+id/selectorFragment"
+        android:name="ru.bashcony.currencyconverter.presentation.selector.SelectorFragment"
+        tools:layout="@layout/fragment_selector"
+        android:label="SelectorFragment" >
+        <action
+            android:id="@+id/action_selectorFragment_to_convertedFragment"
+            app:destination="@id/convertedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/convertedFragment"
+        tools:layout="@layout/fragment_converted"
+        android:name="ru.bashcony.currencyconverter.presentation.converted.ConvertedFragment"
+        android:label="ConvertedFragment" >
+        <argument
+            android:name="from"
+            app:argType="string" />
+        <argument
+            android:name="to"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shimmer_highlight_alpha="1"
+        app:shimmer_highlight_color="?colorSurface"
+        app:shimmer_base_color="?colorSurfaceContainerHighest"
+        app:shimmer_colored="true"
+        app:shimmer_base_alpha="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/shimmer_time_updated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorSurfaceContainerHighest"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="С учётом курса валют от 22 июля 2024 года:"
+                android:textColor="@android:color/transparent"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/shimmer_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorSurfaceContainerHighest"
+                android:drawablePadding="10dp"
+                android:drawableTint="?colorSurfaceContainerHighest"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="120 JPY"
+                android:textColor="@android:color/transparent"
+                android:textSize="42sp"
+                app:drawableEndCompat="@drawable/resource_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shimmer_time_updated" />
+
+            <TextView
+                android:id="@+id/shimmer_from_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorSurfaceContainerHighest"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="1 JPY = 0.56 RUB"
+                android:textColor="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shimmer_from" />
+
+            <View
+                android:id="@+id/shimmer_arrow_down"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorSurfaceContainerHighest"
+                android:cropToPadding="true"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shimmer_from_rate" />
+
+            <TextView
+                android:id="@+id/shimmer_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorSurfaceContainerHighest"
+                android:drawablePadding="10dp"
+                android:drawableTint="?colorSurfaceContainerHighest"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="66.87 RUB"
+                android:textColor="@android:color/transparent"
+                android:textSize="42sp"
+                app:drawableEndCompat="@drawable/resource_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shimmer_arrow_down" />
+
+            <TextView
+                android:id="@+id/shimmer_to_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorSurfaceContainerHighest"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="1 RUB = 1.79 JPY"
+                android:textColor="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shimmer_to" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,25 +1,70 @@
 [versions]
 agp = "8.5.0"
-kotlin = "1.9.0"
+androidsvgAar = "1.4"
+appcompat = "1.7.0"
+coil = "2.5.0"
 coreKtx = "1.13.1"
+followyUiVersion = "0.2.3"
+glideVersion = "4.16.0"
+gson = "2.11.0"
+jetbrainsKotlinJvm = "1.9.22"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-appcompat = "1.7.0"
+hiltVersion = "2.51.1"
+kotlin = "1.9.22"
+kspVersion = "1.9.22-1.0.17"
+loggingInterceptor = "5.0.0-alpha.14"
 material = "1.12.0"
-jetbrainsKotlinJvm = "1.9.0"
+navigationVersion = "2.7.7"
+retrofitVersion = "2.11.0"
+roomVersion = "2.6.1"
+rxAndroidVersion = "2.1.1"
+rxVersion = "2.2.21"
+rxKotlinVersion = "2.4.0"
+shimmer = "0.5.0"
+splashScreenVersion = "1.0.1"
+volley = "1.2.1"
 
 [libraries]
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "retrofitVersion" }
+androidsvg-aar = { module = "com.caverock:androidsvg-aar", version.ref = "androidsvgAar" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashScreenVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationVersion" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationVersion" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomVersion" }
+androidx-room-rxjava2 = { module = "androidx.room:room-rxjava2", version.ref = "roomVersion" }
+bashcony-followy-ui = { module = "ru.bashcony:followy-ui", version.ref = "followyUiVersion" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coil" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glideVersion" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitVersion" }
+converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "retrofitVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ksp-hilt = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltVersion" }
+ksp-room = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+rxandroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxAndroidVersion" }
+rxjava = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxVersion" }
+rxkotlin = { module = "io.reactivex.rxjava2:rxkotlin", version.ref = "rxKotlinVersion" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "shimmer" }
+volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
-
+navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigationVersion" }
+google-dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
